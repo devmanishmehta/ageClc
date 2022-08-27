@@ -89,7 +89,7 @@ body{
 .buyMe{
     filter: drop-shadow(2px 4px 6px black);
     background-color: rgb(255 192 203 / 16%); /* Just adjust the color or opacity to make the text pop! */
-    box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
+    box-shadow: inset 0 0 0 270px rgb(255 255 255 / 8%);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
