@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+        <!--============== link favicon ========== -->
+        <link rel="shortcut icon" href="img/favicon_io/android-chrome-192x192.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon_io/android-chrome-512x512.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon_io/apple-touch-icon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon_io/favicon-16x16.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon_io/favicon-32x32.png" type="image/x-icon">
+        <link rel="manifest" href="img/favicon_io/site.webmanifest">
+       <!--Google Font-->
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+       <link data-n-head="1" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap">
+       <!-- bootstrap cdn link -->
+       <!-- bootstrap icon  -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+       <!-- CSS only -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+       <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!-- ///////////// navbar ///////////////////// -->
+    <header>
+      <div>
+          <nav class="navbar navbar-expand-lg navbar1 p-0 m-0">
+              <div class="container"> 
+                <a class="navbar-brand" href="/ageClc/"><img src="img/Age Calculator-3.png"  class="logo1" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="/ageClc/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="/ageClc/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="/ageClc/termsAndConditions.html">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+      </div>
+  </header>
+    <!-- //////////////// Age Clc //////////////////// -->
+ <section>
+  <div class="container d-flex justify-content-center">
+    <div class="ageClc my-5 col-md-6 col-12 p-4 rounded-3">
+        <div class="inputs-wrapper">
+                <input type="date" id="date-input"  required> 
+                <button onclick="ageClc()"><span class="icon2">Calculate</span></button>
+        </div>
+        <div class="outputs-wrapper">
+                <div>
+                    <span id="years">
+                        -
+                    </span>
+                    <p>
+                        Years
+                    </p>
+                </div>
+                <div>
+                    <span id="months">
+                        -
+                    </span>
+                    <p>
+                        Months
+                    </p>
+                </div>
+                <div>
+                    <span id="days">
+                        -
+                    </span>
+                    <p>
+                        Days
+                    </p>
+                </div>
+        </div>
+    </div>
+</div>
+ </section>
+    <section>
+      <div class="container buyMe py-5 my-5">
+        <!-- /////// carausol start //////////////// -->
+        <div class="carousel">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p><i class="bi bi-quote quoteIcon"></i> You don’t stop laughing when you grow old, you grow old when you stop laughing.</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer text-white-50">
+                    George Bernard Shaw 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="carousel-item">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p> <i class="bi bi-quote quoteIcon"></i> How old would you be if you didn’t know how old you was?</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer text-white-50">
+                    Satchel Paige 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="carousel-item">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p><i class="bi bi-quote quoteIcon"></i> We don’t stop playing because we grow old. We grow old because we stop playing.</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer text-white-50">
+                    George Bernard Shaw
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="carousel-item">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p><i class="bi bi-quote quoteIcon"></i> Age is an issue of mind over matter. If you don’t mind, it doesn’t matter.</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer text-white-50">
+                    Mark Twain
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /////// carausol start //////////////// -->
+        <div class="row my-4 d-flex justify-content-center align-items-center">
+          <div class="col-md-3 col-4 mt-2">
+            <a href="https://devmanishmehta.github.io/LoveClc/" target="_blank"><img src="img/loveClc-logo.png" alt="Love Calculator" style="width: 90px !important;" ></a>
+          </div>
+          <div class="col-md-3 col-5 mt-2">
+            <button class="commingSoon btn py-2 px-sm-4 px-md-5">Looming..</button>
+          </div>
+          <div class="col-md-3 col-8 ms-4 mt-2">
+            <a href="https://www.buymeacoffee.com/manishmehta" target="_blank"><img src="img/bmc-full-logo.svg" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ////////////////// footer section //////////////////// -->
+    <footer>
+      <div class="container-fluid text-center footerBG py-5 ">
+          <div>
+              <div class="social mt-4 mb-3">
+                  <a href="https://github.com/devmanishmehta" target="_blank" class="px-3 py-2 icon1">
+                    <i class="bi bi-github"></i></a>
+                  <a href="https://twitter.com/devmanishmehta?t=O7lq08XlMO4jdU-aIHwZSA&s=09" target="_blank" class="px-3 py-2 icon1">
+                    <i class="bi bi-twitter"></i></a>
+                  <a href="https://instagram.com/devmanishmehta?igshid=YmMyMTA2M2Y=" target="_blank" class="px-3 py-2 icon1">
+                    <i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/devmanishmehta/" target="_blank" class="px-3 py-2 icon1">
+                    <i class="bi bi-linkedin"></i></a>
+              </div>
+          </div>
+          <a href="/ageClc/privacyPolicy.html" class="text-decoration-none small text-muted">privacy policy</a><br>
+          <a href="https://devmanishmehta.github.io/manishmehta/" target="_blank" class="text-decoration-none text-muted ">© Created by Manish Mehta</a>
+      </div>
+     </footer>
+
+  </main>
+    <script src="script.js"></script>
+</body>
+</html>
