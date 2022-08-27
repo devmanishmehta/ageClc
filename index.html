@@ -57,10 +57,15 @@
   </header>
     <!-- //////////////// Age Clc //////////////////// -->
  <section>
+  <div><p class="text-center mt-5 fs-5 px-3"><i class="bi bi-calendar-heart-fill iconCaln"></i> Enter your Date of Birth (DOB) to find out how old are you <i class="bi bi-calculator-fill iconCaln1"></i></p></div>
   <div class="container d-flex justify-content-center">
+    
     <div class="ageClc my-5 col-md-6 col-12 p-4 rounded-3">
         <div class="inputs-wrapper row row-cols-auto">
-                <div class="mt-4 mx-auto "><input type="date" id="date-input" class="px-5 py-3"  required></div> 
+                <div class=" mx-auto ">
+                  <label for="date-input" class="form-label text-muted ms-md-5 ms-4">Date Of Birth</label>
+                  <input type="date" id="date-input" class="px-md-5 py-3 form-control"  placeholder="Enter DOB" required>
+                </div> 
                 <div class="mt-4 mx-auto"><button onclick="ageClc()" class="px-4 py-3 clcBtn">Calculate</button></div>
         </div>
         <div class="outputs-wrapper d-flex justify-content-between">
@@ -141,7 +146,7 @@
             </div>
           </div>
         </div>
-        <!-- /////// carausol start //////////////// -->
+        <!-- /////// carausol end //////////////// -->
         <div class="">
           <div class="row  my-4 d-flex justify-content-center align-items-center ">
             <div class=" text-center col-6 col-md-4 mt-4 ">

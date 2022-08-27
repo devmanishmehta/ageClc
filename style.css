@@ -31,8 +31,8 @@ body{
 }
 .ageClc input{
     font-size: 14px;
-    background-color: #ffffff;
     color: #080808;
+    display: block;
 }
 .ageClc button{
     cursor: pointer;
@@ -162,4 +162,10 @@ body{
 .quoteIcon{
     font-size: 40px;
     color: #00ffd5;
+}
+.iconCaln{
+    color: #00ffd5;
+}
+.iconCaln1{
+    font-size: 12px;
 }
