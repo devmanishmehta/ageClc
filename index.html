@@ -59,11 +59,11 @@
  <section>
   <div class="container d-flex justify-content-center">
     <div class="ageClc my-5 col-md-6 col-12 p-4 rounded-3">
-        <div class="inputs-wrapper">
-                <input type="date" id="date-input"  required> 
-                <button onclick="ageClc()"><span class="icon2">Calculate</span></button>
+        <div class="inputs-wrapper row row-cols-auto">
+                <div class="mt-4 mx-auto "><input type="date" id="date-input" class="px-5 py-3"  required></div> 
+                <div class="mt-4 mx-auto"><button onclick="ageClc()" class="px-4 py-3 clcBtn">Calculate</button></div>
         </div>
-        <div class="outputs-wrapper">
+        <div class="outputs-wrapper d-flex justify-content-between">
                 <div>
                     <span id="years">
                         -
@@ -72,7 +72,7 @@
                         Years
                     </p>
                 </div>
-                <div>
+                <div class="mx-2">
                     <span id="months">
                         -
                     </span>
@@ -142,15 +142,17 @@
           </div>
         </div>
         <!-- /////// carausol start //////////////// -->
-        <div class="row my-4 d-flex justify-content-center align-items-center">
-          <div class="col-md-3 col-4 mt-2">
-            <a href="https://devmanishmehta.github.io/LoveClc/" target="_blank"><img src="img/loveClc-logo.png" alt="Love Calculator" style="width: 90px !important;" ></a>
-          </div>
-          <div class="col-md-3 col-5 mt-2">
-            <button class="commingSoon btn py-2 px-sm-4 px-md-5">Looming..</button>
-          </div>
-          <div class="col-md-3 col-8 ms-4 mt-2">
-            <a href="https://www.buymeacoffee.com/manishmehta" target="_blank"><img src="img/bmc-full-logo.svg" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+        <div class="d-flex justify-content-center">
+          <div class="row my-4 row-cols-auto justify-content-center align-items-center">
+            <div class="col-6  col-lg-auto mt-4">
+              <a href="https://devmanishmehta.github.io/LoveClc/" target="_blank"><img src="img/lovecalculator-2.png" alt="Love Calculator" style="width: 75px !important;" ></a>
+            </div>
+            <div class=" col-5 col-lg-auto mt-4">
+              <button class="commingSoon btn py-2  px-md-5" id="looming">Looming..</button>
+            </div>
+            <div class=" col col-lg-auto mt-4">
+              <a href="https://www.buymeacoffee.com/manishmehta" target="_blank" text-center><img src="img/bmc-full-logo.svg" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+            </div>
           </div>
         </div>
       </div>
